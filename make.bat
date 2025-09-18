@@ -180,7 +180,7 @@ GOTO :EOF
             echo [Version] Updating dependencies in %%M
             pushd "%%M"
             CALL go mod tidy || (echo [Error] Failed to tidy module %%M & popd & EXIT /B 1)
-            FOR /F "delims=" %%D IN ('go list -mod=mod -f "{{if and (not .Main)}}{{.Path}}@%VERSION%{{end}}" -m all ^| findstr "^github.com/zishang520/socket.io"') DO (
+            FOR /F "delims=" %%D IN ('go list -mod=mod -f "{{if and (not .Main)}}{{.Path}}@%VERSION%{{end}}" -m all ^| findstr "^github.com/winking324/socket.io"') DO (
                 CALL go get -v %%D || (echo [Error] Failed to get dependency %%D & popd & EXIT /B 1)
             )
             CALL go mod tidy || (echo [Error] Failed to tidy module %%M & popd & EXIT /B 1)

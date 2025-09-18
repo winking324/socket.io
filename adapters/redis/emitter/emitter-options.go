@@ -2,8 +2,8 @@
 package emitter
 
 import (
-	"github.com/zishang520/socket.io/adapters/redis/v3"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/adapters/redis/v3"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 type (

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 type Placeholder struct {

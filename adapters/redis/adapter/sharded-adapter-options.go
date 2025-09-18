@@ -1,7 +1,7 @@
 // Package adapter provides configuration options for the Redis sharded Pub/Sub adapter for Socket.IO.
 package adapter
 
-import "github.com/zishang520/socket.io/v3/pkg/types"
+import "github.com/winking324/socket.io/v3/pkg/types"
 
 type (
 	subscriptionMode string

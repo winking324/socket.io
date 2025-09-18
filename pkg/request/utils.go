@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zishang520/socket.io/v3/pkg/log"
+	"github.com/winking324/socket.io/v3/pkg/log"
 )
 
 var (

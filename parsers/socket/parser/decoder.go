@@ -9,8 +9,8 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/zishang520/socket.io/v3/pkg/log"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/log"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 var (

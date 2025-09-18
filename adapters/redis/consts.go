@@ -2,7 +2,7 @@
 package redis
 
 import (
-	"github.com/zishang520/socket.io/adapters/adapter/v3"
+	"github.com/winking324/socket.io/adapters/adapter/v3"
 )
 
 const (

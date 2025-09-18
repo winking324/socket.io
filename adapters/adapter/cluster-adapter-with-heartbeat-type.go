@@ -3,8 +3,8 @@ package adapter
 import (
 	"sync/atomic"
 
-	"github.com/zishang520/socket.io/v3/pkg/types"
-	"github.com/zishang520/socket.io/v3/pkg/utils"
+	"github.com/winking324/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/utils"
 )
 
 // CustomClusterRequest represents a custom request in the cluster with tracking for missing responses.

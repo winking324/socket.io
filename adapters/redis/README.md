@@ -1,6 +1,6 @@
 # socket.io-go-redis
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/zishang520/socket.io/adapters/redis/v3?utm_source=godoc)](https://pkg.go.dev/github.com/zishang520/socket.io/adapters/redis/v3)
+[![GoDoc](https://pkg.go.dev/badge/github.com/winking324/socket.io/adapters/redis/v3?utm_source=godoc)](https://pkg.go.dev/github.com/winking324/socket.io/adapters/redis/v3)
 
 ## Description
 
@@ -9,7 +9,7 @@ A Redis adapter for Socket.IO server in Go, allowing to scale Socket.IO applicat
 ## Installation
 
 ```bash
-go get github.com/zishang520/socket.io/adapters/redis/v3
+go get github.com/winking324/socket.io/adapters/redis/v3
 ```
 
 ## Features
@@ -35,9 +35,9 @@ import (
     "syscall"
 
     rds "github.com/redis/go-redis/v9"
-    "github.com/zishang520/socket.io/adapters/redis/v3"
-    "github.com/zishang520/socket.io/adapters/redis/v3/adapter"
-    "github.com/zishang520/socket.io/servers/socket/v3"
+    "github.com/winking324/socket.io/adapters/redis/v3"
+    "github.com/winking324/socket.io/adapters/redis/v3/adapter"
+    "github.com/winking324/socket.io/servers/socket/v3"
 )
 
 func main() {
@@ -129,7 +129,7 @@ make test
 
 ## Support
 
-If you encounter any issues or have questions, please file them in the [issues section](https://github.com/zishang520/socket.io/issues).
+If you encounter any issues or have questions, please file them in the [issues section](https://github.com/winking324/socket.io/issues).
 
 ## License
 

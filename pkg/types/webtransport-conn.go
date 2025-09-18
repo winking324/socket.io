@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/zishang520/socket.io/v3/pkg/webtransport"
 	wt "github.com/zishang520/webtransport-go"
+	"github.com/winking324/socket.io/v3/pkg/webtransport"
 )
 
 type WebTransportConn struct {

@@ -106,7 +106,7 @@ endif
 			(cd "$$mod" && \
 				go mod tidy && \
 				go list -mod=mod -f '{{if and (not .Main)}}{{.Path}}@$(VERSION){{end}}' -m all | \
-				grep '^github.com/zishang520/socket.io' | \
+				grep '^github.com/winking324/socket.io' | \
 				xargs -I {} go get -v {} && \
 				go mod tidy) || { echo "[Error] Failed in $$mod"; exit 1; }; \
 		else \

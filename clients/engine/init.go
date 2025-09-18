@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/zishang520/socket.io/parsers/engine/v3/parser"
-	"github.com/zishang520/socket.io/v3/pkg/events"
-	"github.com/zishang520/socket.io/v3/pkg/log"
-	"github.com/zishang520/socket.io/v3/pkg/types"
-	"github.com/zishang520/socket.io/v3/pkg/utils"
+	"github.com/winking324/socket.io/parsers/engine/v3/parser"
+	"github.com/winking324/socket.io/v3/pkg/events"
+	"github.com/winking324/socket.io/v3/pkg/log"
+	"github.com/winking324/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/utils"
 )
 
 // Logger instances for different components of the Engine.IO client.

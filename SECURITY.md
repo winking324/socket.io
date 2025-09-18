@@ -16,7 +16,7 @@ We take the security of Socket.IO Go implementation seriously. If you believe yo
 
 1. **Do Not** disclose the vulnerability publicly.
 2. Submit a report through one of these channels:
-   - Open a [security advisory](https://github.com/zishang520/socket.io/security/advisories/new)
+   - Open a [security advisory](https://github.com/winking324/socket.io/security/advisories/new)
    - Send an email to [maintainer's email] with details of the issue
 
 Please include the following information in your report:

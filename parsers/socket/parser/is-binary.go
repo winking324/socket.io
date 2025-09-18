@@ -4,7 +4,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 // IsBinary returns true if the data is a binary type (Buffer or File).

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 func TestEncode(t *testing.T) {

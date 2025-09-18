@@ -1,13 +1,13 @@
-module github.com/zishang520/socket.io/clients/socket/v3
+module github.com/winking324/socket.io/clients/socket/v3
 
 go 1.24.1
 
 require (
-	github.com/zishang520/socket.io/clients/engine/v3 v3.0.0-rc.6
-	github.com/zishang520/socket.io/parsers/engine/v3 v3.0.0-rc.6
-	github.com/zishang520/socket.io/parsers/socket/v3 v3.0.0-rc.6
-	github.com/zishang520/socket.io/servers/socket/v3 v3.0.0-rc.6
-	github.com/zishang520/socket.io/v3 v3.0.0-rc.6
+	github.com/winking324/socket.io/clients/engine/v3 v3.0.0-rc.8
+	github.com/winking324/socket.io/parsers/engine/v3 v3.0.0-rc.8
+	github.com/winking324/socket.io/parsers/socket/v3 v3.0.0-rc.8
+	github.com/winking324/socket.io/servers/socket/v3 v3.0.0-rc.8
+	github.com/winking324/socket.io/v3 v3.0.0-rc.8
 )
 
 require (
@@ -20,8 +20,8 @@ require (
 	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
-	github.com/zishang520/socket.io/servers/engine/v3 v3.0.0-rc.6 // indirect
 	github.com/zishang520/webtransport-go v0.9.1 // indirect
+	github.com/winking324/socket.io/servers/engine/v3 v3.0.0-rc.8 // indirect
 	go.uber.org/mock v0.6.0 // indirect
 	golang.org/x/crypto v0.42.0 // indirect
 	golang.org/x/mod v0.28.0 // indirect
@@ -34,10 +34,10 @@ require (
 )
 
 replace (
-	github.com/zishang520/socket.io/clients/engine/v3 => ../../clients/engine
-	github.com/zishang520/socket.io/parsers/engine/v3 => ../../parsers/engine
-	github.com/zishang520/socket.io/parsers/socket/v3 => ../../parsers/socket
-	github.com/zishang520/socket.io/servers/engine/v3 => ../../servers/engine
-	github.com/zishang520/socket.io/servers/socket/v3 => ../../servers/socket
-	github.com/zishang520/socket.io/v3 => ../../
+	github.com/winking324/socket.io/clients/engine/v3 => ../../clients/engine
+	github.com/winking324/socket.io/parsers/engine/v3 => ../../parsers/engine
+	github.com/winking324/socket.io/parsers/socket/v3 => ../../parsers/socket
+	github.com/winking324/socket.io/servers/engine/v3 => ../../servers/engine
+	github.com/winking324/socket.io/servers/socket/v3 => ../../servers/socket
+	github.com/winking324/socket.io/v3 => ../../
 )

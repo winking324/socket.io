@@ -9,9 +9,9 @@ import (
 	"time"
 
 	ws "github.com/gorilla/websocket"
-	"github.com/zishang520/socket.io/parsers/engine/v3/packet"
-	"github.com/zishang520/socket.io/v3/pkg/log"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/parsers/engine/v3/packet"
+	"github.com/winking324/socket.io/v3/pkg/log"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 var ws_log = log.NewLog("engine:ws")

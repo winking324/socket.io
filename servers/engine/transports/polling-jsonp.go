@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"regexp"
 
-	"github.com/zishang520/socket.io/parsers/engine/v3/packet"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/parsers/engine/v3/packet"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 var (

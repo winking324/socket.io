@@ -1,6 +1,6 @@
 # socket.io-go-adapter
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/zishang520/socket.io/adapters/adapter/v3?utm_source=godoc)](https://pkg.go.dev/github.com/zishang520/socket.io/adapters/adapter/v3)
+[![GoDoc](https://pkg.go.dev/badge/github.com/winking324/socket.io/adapters/adapter/v3?utm_source=godoc)](https://pkg.go.dev/github.com/winking324/socket.io/adapters/adapter/v3)
 
 ## Description
 
@@ -9,7 +9,7 @@ A base adapter implementation for Socket.IO server in Go, providing core functio
 ## Installation
 
 ```bash
-go get github.com/zishang520/socket.io/adapters/adapter/v3
+go get github.com/winking324/socket.io/adapters/adapter/v3
 ```
 
 ## Features
@@ -29,8 +29,8 @@ Basic usage example:
 package main
 
 import (
-    "github.com/zishang520/socket.io/adapters/adapter/v3"
-    "github.com/zishang520/socket.io/servers/socket/v3"
+    "github.com/winking324/socket.io/adapters/adapter/v3"
+    "github.com/winking324/socket.io/servers/socket/v3"
 )
 
 func main() {
@@ -115,7 +115,7 @@ make test
 
 ## Support
 
-If you encounter any issues or have questions, please file them in the [issues section](https://github.com/zishang520/socket.io/issues).
+If you encounter any issues or have questions, please file them in the [issues section](https://github.com/winking324/socket.io/issues).
 
 ## License
 

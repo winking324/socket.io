@@ -19,7 +19,7 @@ We recommend reviewing this entire upgrade guide to understand all of the change
 <details>
 <summary>Dependency Structure Consolidation</summary>
 
-All Socket.IO related packages are now consolidated under the main `github.com/zishang520/socket.io/` repository with versioned submodules. This change affects every import in your application.
+All Socket.IO related packages are now consolidated under the main `github.com/winking324/socket.io/` repository with versioned submodules. This change affects every import in your application.
 
 **Likelihood Of Impact: Very High**
 
@@ -35,11 +35,11 @@ The Redis adapter has replaced `types.String` with `types.Atomic[string]` for be
 
 ```go
 // Before
-import "github.com/zishang520/socket.io-go-redis/types"
+import "github.com/winking324/socket.io-go-redis/types"
 var s types.String
 
 // After  
-import "github.com/zishang520/socket.io/v3/pkg/types"
+import "github.com/winking324/socket.io/v3/pkg/types"
 var s types.Atomic[string]
 ```
 </details>
@@ -91,14 +91,14 @@ GetRawMaxDisconnectionDuration() types.Optional[int64]
 You should update your `go.mod` to require the Socket.IO v3 packages:
 
 ```bash
-go get github.com/zishang520/socket.io/v3@latest
-go get github.com/zishang520/socket.io/parsers/engine/v3@latest
-go get github.com/zishang520/socket.io/parsers/socket/v3@latest
-go get github.com/zishang520/socket.io/servers/engine/v3@latest
-go get github.com/zishang520/socket.io/servers/socket/v3@latest
-go get github.com/zishang520/socket.io/adapters/redis/v3@latest
-go get github.com/zishang520/socket.io/clients/engine/v3@latest
-go get github.com/zishang520/socket.io/clients/socket/v3@latest
+go get github.com/winking324/socket.io/v3@latest
+go get github.com/winking324/socket.io/parsers/engine/v3@latest
+go get github.com/winking324/socket.io/parsers/socket/v3@latest
+go get github.com/winking324/socket.io/servers/engine/v3@latest
+go get github.com/winking324/socket.io/servers/socket/v3@latest
+go get github.com/winking324/socket.io/adapters/redis/v3@latest
+go get github.com/winking324/socket.io/clients/engine/v3@latest
+go get github.com/winking324/socket.io/clients/socket/v3@latest
 ```
 
 After updating, clean up your dependencies:
@@ -111,14 +111,14 @@ Your `go.mod` should contain entries similar to:
 
 ```go
 require (
-    github.com/zishang520/socket.io/v3 v3.0.0
-    github.com/zishang520/socket.io/parsers/engine/v3 v3.0.0
-    github.com/zishang520/socket.io/parsers/socket/v3 v3.0.0
-    github.com/zishang520/socket.io/servers/engine/v3 v3.0.0
-    github.com/zishang520/socket.io/servers/socket/v3 v3.0.0
-    github.com/zishang520/socket.io/adapters/redis/v3 v3.0.0
-    github.com/zishang520/socket.io/clients/engine/v3 v3.0.0
-    github.com/zishang520/socket.io/clients/socket/v3 v3.0.0
+    github.com/winking324/socket.io/v3 v3.0.0
+    github.com/winking324/socket.io/parsers/engine/v3 v3.0.0
+    github.com/winking324/socket.io/parsers/socket/v3 v3.0.0
+    github.com/winking324/socket.io/servers/engine/v3 v3.0.0
+    github.com/winking324/socket.io/servers/socket/v3 v3.0.0
+    github.com/winking324/socket.io/adapters/redis/v3 v3.0.0
+    github.com/winking324/socket.io/clients/engine/v3 v3.0.0
+    github.com/winking324/socket.io/clients/socket/v3 v3.0.0
 )
 ```
 
@@ -130,72 +130,72 @@ You must update all Socket.IO import paths throughout your application. Use the 
 
 | v1/v2 Import | v3 Import |
 |--------------|-----------|
-| `github.com/zishang520/engine.io-go-parser/packet` | `github.com/zishang520/socket.io/parsers/engine/v3/packet` |
-| `github.com/zishang520/engine.io-go-parser/parser` | `github.com/zishang520/socket.io/parsers/engine/v3/parser` |
-| `github.com/zishang520/engine.io-go-parser/types` | `github.com/zishang520/socket.io/v3/pkg/types` |
-| `github.com/zishang520/engine.io-go-parser/utils` | `github.com/zishang520/socket.io/v3/pkg/utils` |
+| `github.com/winking324/engine.io-go-parser/packet` | `github.com/winking324/socket.io/parsers/engine/v3/packet` |
+| `github.com/winking324/engine.io-go-parser/parser` | `github.com/winking324/socket.io/parsers/engine/v3/parser` |
+| `github.com/winking324/engine.io-go-parser/types` | `github.com/winking324/socket.io/v3/pkg/types` |
+| `github.com/winking324/engine.io-go-parser/utils` | `github.com/winking324/socket.io/v3/pkg/utils` |
 
 ### Socket.IO Parser
 
 | v1/v2 Import | v3 Import |
 |--------------|-----------|
-| `github.com/zishang520/socket.io-go-parser/parser` | `github.com/zishang520/socket.io/parsers/socket/v3/parser` |
-| `github.com/zishang520/socket.io-go-parser/v2/parser` | `github.com/zishang520/socket.io/parsers/socket/v3/parser` |
+| `github.com/winking324/socket.io-go-parser/parser` | `github.com/winking324/socket.io/parsers/socket/v3/parser` |
+| `github.com/winking324/socket.io-go-parser/v2/parser` | `github.com/winking324/socket.io/parsers/socket/v3/parser` |
 
 ### Engine.IO Server
 
 | v1/v2 Import | v3 Import |
 |--------------|-----------|
-| `github.com/zishang520/engine.io/config` | `github.com/zishang520/socket.io/servers/engine/v3/config` |
-| `github.com/zishang520/engine.io/v2/config` | `github.com/zishang520/socket.io/servers/engine/v3/config` |
-| `github.com/zishang520/engine.io/engine` | `github.com/zishang520/socket.io/servers/engine/v3` |
-| `github.com/zishang520/engine.io/v2/engine` | `github.com/zishang520/socket.io/servers/engine/v3` |
-| `github.com/zishang520/engine.io/errors` | `github.com/zishang520/socket.io/servers/engine/v3/errors` |
-| `github.com/zishang520/engine.io/v2/errors` | `github.com/zishang520/socket.io/servers/engine/v3/errors` |
-| `github.com/zishang520/engine.io/events` | `github.com/zishang520/socket.io/v3/pkg/events` |
-| `github.com/zishang520/engine.io/v2/events` | `github.com/zishang520/socket.io/v3/pkg/events` |
-| `github.com/zishang520/engine.io/log` | `github.com/zishang520/socket.io/v3/pkg/log` |
-| `github.com/zishang520/engine.io/v2/log` | `github.com/zishang520/socket.io/v3/pkg/log` |
-| `github.com/zishang520/engine.io/transports` | `github.com/zishang520/socket.io/servers/engine/v3/transports` |
-| `github.com/zishang520/engine.io/v2/transports` | `github.com/zishang520/socket.io/servers/engine/v3/transports` |
-| `github.com/zishang520/engine.io/types` | `github.com/zishang520/socket.io/v3/pkg/types` |
-| `github.com/zishang520/engine.io/v2/types` | `github.com/zishang520/socket.io/v3/pkg/types` |
-| `github.com/zishang520/engine.io/utils` | `github.com/zishang520/socket.io/v3/pkg/utils` |
-| `github.com/zishang520/engine.io/v2/utils` | `github.com/zishang520/socket.io/v3/pkg/utils` |
-| `github.com/zishang520/engine.io/v2/webtransport` | `github.com/zishang520/socket.io/v3/pkg/webtransport` |
+| `github.com/winking324/engine.io/config` | `github.com/winking324/socket.io/servers/engine/v3/config` |
+| `github.com/winking324/engine.io/v2/config` | `github.com/winking324/socket.io/servers/engine/v3/config` |
+| `github.com/winking324/engine.io/engine` | `github.com/winking324/socket.io/servers/engine/v3` |
+| `github.com/winking324/engine.io/v2/engine` | `github.com/winking324/socket.io/servers/engine/v3` |
+| `github.com/winking324/engine.io/errors` | `github.com/winking324/socket.io/servers/engine/v3/errors` |
+| `github.com/winking324/engine.io/v2/errors` | `github.com/winking324/socket.io/servers/engine/v3/errors` |
+| `github.com/winking324/engine.io/events` | `github.com/winking324/socket.io/v3/pkg/events` |
+| `github.com/winking324/engine.io/v2/events` | `github.com/winking324/socket.io/v3/pkg/events` |
+| `github.com/winking324/engine.io/log` | `github.com/winking324/socket.io/v3/pkg/log` |
+| `github.com/winking324/engine.io/v2/log` | `github.com/winking324/socket.io/v3/pkg/log` |
+| `github.com/winking324/engine.io/transports` | `github.com/winking324/socket.io/servers/engine/v3/transports` |
+| `github.com/winking324/engine.io/v2/transports` | `github.com/winking324/socket.io/servers/engine/v3/transports` |
+| `github.com/winking324/engine.io/types` | `github.com/winking324/socket.io/v3/pkg/types` |
+| `github.com/winking324/engine.io/v2/types` | `github.com/winking324/socket.io/v3/pkg/types` |
+| `github.com/winking324/engine.io/utils` | `github.com/winking324/socket.io/v3/pkg/utils` |
+| `github.com/winking324/engine.io/v2/utils` | `github.com/winking324/socket.io/v3/pkg/utils` |
+| `github.com/winking324/engine.io/v2/webtransport` | `github.com/winking324/socket.io/v3/pkg/webtransport` |
 
 ### Socket.IO Server
 
 | v1/v2 Import | v3 Import |
 |--------------|-----------|
-| `github.com/zishang520/socket.io/socket` | `github.com/zishang520/socket.io/servers/socket/v3` |
-| `github.com/zishang520/socket.io/v2/socket` | `github.com/zishang520/socket.io/servers/socket/v3` |
-| `github.com/zishang520/socket.io/v2/adapter` | `github.com/zishang520/socket.io/adapters/adapter/v3` |
+| `github.com/winking324/socket.io/socket` | `github.com/winking324/socket.io/servers/socket/v3` |
+| `github.com/winking324/socket.io/v2/socket` | `github.com/winking324/socket.io/servers/socket/v3` |
+| `github.com/winking324/socket.io/v2/adapter` | `github.com/winking324/socket.io/adapters/adapter/v3` |
 
 ### Redis Adapter
 
 | v1 Import | v3 Import |
 |-----------|-----------|
-| `github.com/zishang520/socket.io-go-redis/adapter` | `github.com/zishang520/socket.io/adapters/redis/v3/adapter` |
-| `github.com/zishang520/socket.io-go-redis/emitter` | `github.com/zishang520/socket.io/adapters/redis/v3/emitter` |
-| `github.com/zishang520/socket.io-go-redis/types` | `github.com/zishang520/socket.io/adapters/redis/v3` |
+| `github.com/winking324/socket.io-go-redis/adapter` | `github.com/winking324/socket.io/adapters/redis/v3/adapter` |
+| `github.com/winking324/socket.io-go-redis/emitter` | `github.com/winking324/socket.io/adapters/redis/v3/emitter` |
+| `github.com/winking324/socket.io-go-redis/types` | `github.com/winking324/socket.io/adapters/redis/v3` |
 
 ### Engine.IO Client
 
 | v1 Import | v3 Import |
 |-----------|-----------|
-| `github.com/zishang520/engine.io-client-go/engine` | `github.com/zishang520/socket.io/clients/engine/v3` |
-| `github.com/zishang520/engine.io-client-go/request` | `github.com/zishang520/socket.io/v3/pkg/request` |
-| `github.com/zishang520/engine.io-client-go/transports` | `github.com/zishang520/socket.io/clients/engine/v3/transports` |
+| `github.com/winking324/engine.io-client-go/engine` | `github.com/winking324/socket.io/clients/engine/v3` |
+| `github.com/winking324/engine.io-client-go/request` | `github.com/winking324/socket.io/v3/pkg/request` |
+| `github.com/winking324/engine.io-client-go/transports` | `github.com/winking324/socket.io/clients/engine/v3/transports` |
 
 ### Socket.IO Client
 
 | v1 Import | v3 Import |
 |-----------|-----------|
-| `github.com/zishang520/socket.io-client-go/socket` | `github.com/zishang520/socket.io/clients/socket/v3` |
-| `github.com/zishang520/socket.io-client-go/utils` | `github.com/zishang520/socket.io/v3/pkg/utils` |
+| `github.com/winking324/socket.io-client-go/socket` | `github.com/winking324/socket.io/clients/socket/v3` |
+| `github.com/winking324/socket.io-client-go/utils` | `github.com/winking324/socket.io/v3/pkg/utils` |
 
-> **Tip:** You can use `grep -r "github.com/zishang520" .` to find all old imports in your codebase, then use your editor's find-and-replace functionality to update them systematically.
+> **Tip:** You can use `grep -r "github.com/winking324" .` to find all old imports in your codebase, then use your editor's find-and-replace functionality to update them systematically.
 
 ## Breaking Changes
 
@@ -209,7 +209,7 @@ If you're using the Redis adapter, you must replace all instances of `types.Stri
 
 ```go
 // Before
-import "github.com/zishang520/socket.io-go-redis/types"
+import "github.com/winking324/socket.io-go-redis/types"
 
 func example() {
     var roomName types.String
@@ -218,7 +218,7 @@ func example() {
 }
 
 // After
-import "github.com/zishang520/socket.io/v3/pkg/types"
+import "github.com/winking324/socket.io/v3/pkg/types"
 
 func example() {
     var roomName types.Atomic[string]
@@ -327,8 +327,8 @@ redisAdapter.Emit("test-room", "test-event", "test-data")
 
 If you encounter issues during the upgrade:
 
-- Check the [GitHub Issues](https://github.com/zishang520/socket.io/issues) page
-- Review the [Socket.IO Go Repository](https://github.com/zishang520/socket.io)
+- Check the [GitHub Issues](https://github.com/winking324/socket.io/issues) page
+- Review the [Socket.IO Go Repository](https://github.com/winking324/socket.io)
 - Consult the [Socket.IO Protocol Documentation](https://socket.io/docs/v4/)
 
 ## Additional Notes

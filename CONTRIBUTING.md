@@ -1,6 +1,6 @@
 # Socket.IO Contributing Guide (Go Version)
 
-Thank you for your interest in contributing to the **Go implementation of Socket.IO** at [`github.com/zishang520/socket.io`](https://github.com/zishang520/socket.io)!
+Thank you for your interest in contributing to the **Go implementation of Socket.IO** at [`github.com/winking324/socket.io`](https://github.com/winking324/socket.io)!
 
 To ensure a smooth collaboration process, please read the following guidelines before you get started.
 
@@ -20,26 +20,26 @@ To ensure a smooth collaboration process, please read the following guidelines b
 
 ## Before You Start
 
-- Our [issues list](https://github.com/zishang520/socket.io/issues) is reserved for **bug reports and feature requests**.
+- Our [issues list](https://github.com/winking324/socket.io/issues) is reserved for **bug reports and feature requests**.
 - For general usage questions, please refer to:
-  - the [documentation](https://github.com/zishang520/socket.io/tree/v3/docs)
-  - or open a [discussion](https://github.com/zishang520/socket.io/discussions/new?category=q-a)
+  - the [documentation](https://github.com/winking324/socket.io/tree/v3/docs)
+  - or open a [discussion](https://github.com/winking324/socket.io/discussions/new?category=q-a)
 
 ## Reporting Bugs
 
-- First, check if your issue already exists in the [bug label](https://github.com/zishang520/socket.io/issues?q=label%3Abug+).
+- First, check if your issue already exists in the [bug label](https://github.com/winking324/socket.io/issues?q=label%3Abug+).
 - If it has been reported but closed and still persists, open a **new issue** instead of commenting on the old one.
 - For security-related bugs, **do not** open a public issue. Refer to our [security policy](./SECURITY.md).
 
 ### When creating a bug report:
 - Include Go module versions
 - Specify the platform (OS, architecture)
-- Provide a minimal reproducible example (see [examples/docs](https://github.com/zishang520/socket.io/tree/v3/docs))
+- Provide a minimal reproducible example (see [examples/docs](https://github.com/winking324/socket.io/tree/v3/docs))
 
 ## Requesting Features
 
-- Check for similar feature requests in the [enhancement list](https://github.com/zishang520/socket.io/labels/enhancement).
-- If none exist, [submit a new feature request](https://github.com/zishang520/socket.io/issues/new/choose).
+- Check for similar feature requests in the [enhancement list](https://github.com/winking324/socket.io/labels/enhancement).
+- If none exist, [submit a new feature request](https://github.com/winking324/socket.io/issues/new/choose).
 
 Include:
 - The problem you're trying to solve
@@ -66,16 +66,16 @@ This is a **Go monorepo**. Each submodule is organized as an independent Go modu
 
 | Go Module                                                  | Description                                                                                                                           |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `github.com/zishang520/socket.io/v3`                       | Root module defining shared types, interfaces, and entry points.                                                                     |
-| `github.com/zishang520/socket.io/servers/engine/v3`        | Engine.IO server: manages low-level communication via transports.                                                                    |
-| `github.com/zishang520/socket.io/clients/engine/v3`        | Engine.IO client: low-level transport connection to server.                                                                          |
-| `github.com/zishang520/socket.io/parsers/engine/v3`        | Engine.IO packet parser: encodes/decodes transport-level messages.                                                                  |
-| `github.com/zishang520/socket.io/servers/socket/v3`        | Socket.IO server: built on Engine.IO server for real-time, bidirectional communication.                                              |
-| `github.com/zishang520/socket.io/clients/socket/v3`        | Socket.IO client: built on Engine.IO client with rooms, namespaces, etc.                                                             |
-| `github.com/zishang520/socket.io/parsers/socket/v3`        | Socket.IO packet parser: handles event-based message encoding/decoding.                                                              |
-| `github.com/zishang520/socket.io/adapters/adapter/v3`      | Adapter interface: plug-and-play broadcast layer for multi-node communication.                                                       |
-| `github.com/zishang520/socket.io/adapters/redis/v3`        | Redis-based adapter: enables pub/sub message broadcasting via Redis.                                                                 |
-| `github.com/zishang520/socket.io/adapters/pgsql/v3`        | PostgreSQL-based adapter (not yet implemented).                                                                                       |
+| `github.com/winking324/socket.io/v3`                       | Root module defining shared types, interfaces, and entry points.                                                                     |
+| `github.com/winking324/socket.io/servers/engine/v3`        | Engine.IO server: manages low-level communication via transports.                                                                    |
+| `github.com/winking324/socket.io/clients/engine/v3`        | Engine.IO client: low-level transport connection to server.                                                                          |
+| `github.com/winking324/socket.io/parsers/engine/v3`        | Engine.IO packet parser: encodes/decodes transport-level messages.                                                                  |
+| `github.com/winking324/socket.io/servers/socket/v3`        | Socket.IO server: built on Engine.IO server for real-time, bidirectional communication.                                              |
+| `github.com/winking324/socket.io/clients/socket/v3`        | Socket.IO client: built on Engine.IO client with rooms, namespaces, etc.                                                             |
+| `github.com/winking324/socket.io/parsers/socket/v3`        | Socket.IO packet parser: handles event-based message encoding/decoding.                                                              |
+| `github.com/winking324/socket.io/adapters/adapter/v3`      | Adapter interface: plug-and-play broadcast layer for multi-node communication.                                                       |
+| `github.com/winking324/socket.io/adapters/redis/v3`        | Redis-based adapter: enables pub/sub message broadcasting via Redis.                                                                 |
+| `github.com/winking324/socket.io/adapters/pgsql/v3`        | PostgreSQL-based adapter (not yet implemented).                                                                                       |
 
 ## Development Setup
 

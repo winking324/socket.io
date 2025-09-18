@@ -7,7 +7,7 @@ import (
 
 	"github.com/symfony-cli/console"
 	"github.com/symfony-cli/terminal"
-	"github.com/zishang520/socket.io/cmd/socket.io/v3/commands"
+	"github.com/winking324/socket.io/cmd/socket.io/v3/commands"
 )
 
 var (

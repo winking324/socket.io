@@ -1,9 +1,9 @@
 # Engine.IO Client for Go
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/zishang520/socket.io/clients/engine/v3.svg)](https://pkg.go.dev/github.com/zishang520/socket.io/clients/engine/v3)
-[![Go Report Card](https://goreportcard.com/badge/github.com/zishang520/socket.io/clients/engine/v3)](https://goreportcard.com/report/github.com/zishang520/socket.io/clients/engine/v3)
+[![Go Reference](https://pkg.go.dev/badge/github.com/winking324/socket.io/clients/engine/v3.svg)](https://pkg.go.dev/github.com/winking324/socket.io/clients/engine/v3)
+[![Go Report Card](https://goreportcard.com/badge/github.com/winking324/socket.io/clients/engine/v3)](https://goreportcard.com/report/github.com/winking324/socket.io/clients/engine/v3)
 
-A robust Go client implementation for [Engine.IO](https://github.com/zishang520/socket.io/tree/v3/servers/engine), the reliable real-time bidirectional communication layer that powers [Socket.IO](https://github.com/zishang520/socket.io/tree/v3/servers/socket).
+A robust Go client implementation for [Engine.IO](https://github.com/winking324/socket.io/tree/v3/servers/engine), the reliable real-time bidirectional communication layer that powers [Socket.IO](https://github.com/winking324/socket.io/tree/v3/servers/socket).
 
 ## Features
 
@@ -37,7 +37,7 @@ A robust Go client implementation for [Engine.IO](https://github.com/zishang520/
 ## Installation
 
 ```bash
-go get github.com/zishang520/socket.io/clients/engine/v3
+go get github.com/winking324/socket.io/clients/engine/v3
 ```
 
 ## Quick Start
@@ -50,8 +50,8 @@ package main
 import (
     "log"
 
-    eio "github.com/zishang520/socket.io/clients/engine/v3"
-    "github.com/zishang520/socket.io/v3/pkg/types"
+    eio "github.com/winking324/socket.io/clients/engine/v3"
+    "github.com/winking324/socket.io/v3/pkg/types"
 )
 
 func main() {
@@ -82,8 +82,8 @@ package main
 import (
     "time"
 
-    "github.com/zishang520/socket.io/clients/engine/v3"
-    "github.com/zishang520/socket.io/clients/engine/v3/transports"
+    "github.com/winking324/socket.io/clients/engine/v3"
+    "github.com/winking324/socket.io/clients/engine/v3/transports"
 )
 
 func main() {
@@ -133,7 +133,7 @@ func main() {
 ### Transport Types
 
 ```go
-import "github.com/zishang520/socket.io/clients/engine/v3/transports"
+import "github.com/winking324/socket.io/clients/engine/v3/transports"
 
 // Available transports
 transports.Polling      // HTTP long-polling
@@ -154,7 +154,7 @@ make test
 Enable debug logs:
 
 ```go
-import "github.com/zishang520/socket.io/v3/pkg/log"
+import "github.com/winking324/socket.io/v3/pkg/log"
 
 log.DEBUG = true
 ```
@@ -178,4 +178,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## Related Projects
 
 - [Engine.IO Protocol](https://github.com/socketio/engine.io-protocol)
-- [Engine.IO Server](https://github.com/zishang520/socket.io/tree/v3/servers/engine)
+- [Engine.IO Server](https://github.com/winking324/socket.io/tree/v3/servers/engine)

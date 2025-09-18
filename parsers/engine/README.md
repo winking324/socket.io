@@ -1,15 +1,15 @@
 # engine.io-go-parser
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/zishang520/socket.io/parsers/engine/v3?utm_source=godoc)](https://pkg.go.dev/github.com/zishang520/socket.io/parsers/engine/v3)
+[![GoDoc](https://pkg.go.dev/badge/github.com/winking324/socket.io/parsers/engine/v3?utm_source=godoc)](https://pkg.go.dev/github.com/winking324/socket.io/parsers/engine/v3)
 
 ## Description
 
-A Go implementation of the Engine.IO protocol parser. This package is used by both [engine.io-client-go](https://github.com/zishang520/socket.io/tree/v3/clients/engine) and [engine.io](https://github.com/zishang520/socket.io/tree/v3/servers/engine) for protocol encoding and decoding.
+A Go implementation of the Engine.IO protocol parser. This package is used by both [engine.io-client-go](https://github.com/winking324/socket.io/tree/v3/clients/engine) and [engine.io](https://github.com/winking324/socket.io/tree/v3/servers/engine) for protocol encoding and decoding.
 
 ## Installation
 
 ```bash
-go get github.com/zishang520/socket.io/parsers/engine/v3
+go get github.com/winking324/socket.io/parsers/engine/v3
 ```
 
 ## Features
@@ -31,8 +31,8 @@ import (
     "bytes"
     "fmt"
 
-    "github.com/zishang520/socket.io/parsers/engine/v3/packet"
-    "github.com/zishang520/socket.io/v3/pkg/types"
+    "github.com/winking324/socket.io/parsers/engine/v3/packet"
+    "github.com/winking324/socket.io/v3/pkg/types"
 )
 
 func main() {
@@ -155,7 +155,7 @@ make test
 
 ## Support
 
-If you encounter any issues or have questions, please file them in the [issues section](https://github.com/zishang520/socket.io/issues).
+If you encounter any issues or have questions, please file them in the [issues section](https://github.com/winking324/socket.io/issues).
 
 ## License
 
