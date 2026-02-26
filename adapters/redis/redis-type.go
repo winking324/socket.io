@@ -7,9 +7,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/zishang520/socket.io/adapters/adapter/v3"
-	"github.com/zishang520/socket.io/parsers/socket/v3/parser"
-	"github.com/zishang520/socket.io/servers/socket/v3"
+	"github.com/winking324/socket.io/adapters/adapter/v3"
+	"github.com/winking324/socket.io/parsers/socket/v3/parser"
+	"github.com/winking324/socket.io/servers/socket/v3"
 )
 
 // ErrNilRedisPacket indicates an attempt to unmarshal into a nil RedisPacket.

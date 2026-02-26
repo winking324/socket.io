@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/zishang520/socket.io/v3/pkg/utils"
+	"github.com/winking324/socket.io/v3/pkg/utils"
 )
 
 type (

@@ -9,12 +9,12 @@ import (
 	"sync"
 
 	ws "github.com/gorilla/websocket"
-	"github.com/zishang520/socket.io/parsers/engine/v3/packet"
-	"github.com/zishang520/socket.io/parsers/engine/v3/parser"
-	"github.com/zishang520/socket.io/servers/engine/v3/transports"
-	"github.com/zishang520/socket.io/v3/pkg/request"
-	"github.com/zishang520/socket.io/v3/pkg/slices"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/parsers/engine/v3/packet"
+	"github.com/winking324/socket.io/parsers/engine/v3/parser"
+	"github.com/winking324/socket.io/servers/engine/v3/transports"
+	"github.com/winking324/socket.io/v3/pkg/request"
+	"github.com/winking324/socket.io/v3/pkg/slices"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 // WebSocket implements the WebSocket transport for Engine.IO.

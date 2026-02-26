@@ -5,8 +5,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/zishang520/socket.io/parsers/socket/v3/parser"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/parsers/socket/v3/parser"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 // TestConnectionStateRecoverySkipMiddlewares tests all cases for SkipMiddlewares method

@@ -20,7 +20,7 @@ set "GOPROXY=https://goproxy.io,direct"
 set "MODULES=parsers/engine parsers/socket servers/engine servers/socket adapters/adapter adapters/redis clients/engine clients/socket"
 set "TEST_TIMEOUT=60s"
 set "VERSION_FILE=pkg\version\version.go"
-set "CORE_DEPENDENCY=github.com/zishang520/socket.io"
+set "CORE_DEPENDENCY=github.com/winking324/socket.io"
 
 :: Check for Go installation
 where go >nul 2>nul

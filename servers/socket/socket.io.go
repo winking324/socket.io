@@ -1,7 +1,7 @@
 package socket
 
 import (
-	"github.com/zishang520/socket.io/servers/engine/v3/transports"
+	"github.com/winking324/socket.io/servers/engine/v3/transports"
 )
 
 type (
