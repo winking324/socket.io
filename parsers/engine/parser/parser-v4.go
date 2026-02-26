@@ -8,8 +8,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/zishang520/socket.io/parsers/engine/v3/packet"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/parsers/engine/v3/packet"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 // parserv4 implements the Engine.IO protocol version 4 parser.

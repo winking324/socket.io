@@ -3,7 +3,7 @@ package socket
 import (
 	"time"
 
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 // SocketOptionsInterface defines the interface for accessing and modifying Socket options.

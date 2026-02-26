@@ -13,13 +13,13 @@ import (
 
 	rds "github.com/redis/go-redis/v9"
 	"github.com/vmihailenco/msgpack/v5"
-	"github.com/zishang520/socket.io/adapters/adapter/v3"
-	"github.com/zishang520/socket.io/adapters/redis/v3"
-	"github.com/zishang520/socket.io/parsers/socket/v3/parser"
-	"github.com/zishang520/socket.io/servers/socket/v3"
-	"github.com/zishang520/socket.io/v3/pkg/slices"
-	"github.com/zishang520/socket.io/v3/pkg/types"
-	"github.com/zishang520/socket.io/v3/pkg/utils"
+	"github.com/winking324/socket.io/adapters/adapter/v3"
+	"github.com/winking324/socket.io/adapters/redis/v3"
+	"github.com/winking324/socket.io/parsers/socket/v3/parser"
+	"github.com/winking324/socket.io/servers/socket/v3"
+	"github.com/winking324/socket.io/v3/pkg/slices"
+	"github.com/winking324/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/utils"
 )
 
 // ShardedRedisAdapterBuilder creates sharded Redis adapters for Socket.IO namespaces.
@@ -99,7 +99,7 @@ func (s *shardedRedisAdapter) Construct(nsp socket.Namespace) {
 	s.responseChannel = s.opts.ChannelPrefix() + "#" + nsp.Name() + "#" + string(s.Uid()) + "#"
 
 	// Subscribe to each channel separately to avoid CROSSSLOT errors in Redis Cluster
-	// See: https://github.com/zishang520/socket.io/issues/134
+	// See: https://github.com/winking324/socket.io/issues/134
 	channelPubSub := s.redisClient.Client.SSubscribe(s.redisClient.Context, s.channel)
 	responsePubSub := s.redisClient.Client.SSubscribe(s.redisClient.Context, s.responseChannel)
 	s.pubSubClients.Store(s.channel, channelPubSub)

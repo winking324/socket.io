@@ -7,11 +7,11 @@ import (
 	"net"
 	"sync"
 
-	"github.com/zishang520/socket.io/parsers/engine/v3/packet"
-	"github.com/zishang520/socket.io/v3/pkg/log"
-	"github.com/zishang520/socket.io/v3/pkg/slices"
-	"github.com/zishang520/socket.io/v3/pkg/types"
-	"github.com/zishang520/socket.io/v3/pkg/webtransport"
+	"github.com/winking324/socket.io/parsers/engine/v3/packet"
+	"github.com/winking324/socket.io/v3/pkg/log"
+	"github.com/winking324/socket.io/v3/pkg/slices"
+	"github.com/winking324/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/v3/pkg/webtransport"
 )
 
 var (

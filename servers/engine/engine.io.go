@@ -4,9 +4,9 @@ package engine
 import (
 	"net/http"
 
-	"github.com/zishang520/socket.io/parsers/engine/v3/parser"
-	"github.com/zishang520/socket.io/servers/engine/v3/transports"
-	"github.com/zishang520/socket.io/v3/pkg/types"
+	"github.com/winking324/socket.io/parsers/engine/v3/parser"
+	"github.com/winking324/socket.io/servers/engine/v3/transports"
+	"github.com/winking324/socket.io/v3/pkg/types"
 )
 
 const Protocol = parser.Protocol

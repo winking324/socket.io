@@ -13,7 +13,7 @@ TEST_TIMEOUT   := 60s
 
 # Project Metadata
 VERSION_FILE   := pkg/version/version.go
-CORE_DEP       := github.com/zishang520/socket.io
+CORE_DEP       := github.com/winking324/socket.io
 
 # Modules Definition (The Domain)
 MODULES := parsers/engine \

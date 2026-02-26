@@ -1,8 +1,8 @@
-module github.com/zishang520/socket.io/parsers/engine/v3
+module github.com/winking324/socket.io/parsers/engine/v3
 
 go 1.24.1
 
-require github.com/zishang520/socket.io/v3 v3.0.0-rc.12
+require github.com/winking324/socket.io/v3 v3.0.0-rc.13
 
 require (
 	github.com/dunglas/httpsfv v1.1.0 // indirect
@@ -20,4 +20,4 @@ require (
 	golang.org/x/text v0.34.0 // indirect
 )
 
-replace github.com/zishang520/socket.io/v3 => ../../
+replace github.com/winking324/socket.io/v3 => ../../
